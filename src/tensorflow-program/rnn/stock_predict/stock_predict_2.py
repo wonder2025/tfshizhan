@@ -91,6 +91,7 @@ def lstm(X):
 
 #！！！！！！！！！！！！！！！！！！儺膳庁侏！！！！！！！！！！！！！！！！！！
 def train_lstm(batch_size=80,time_step=15,train_begin=2000,train_end=5800):
+    # 補秘方象議仇圭
     X=tf.placeholder(tf.float32, shape=[None,time_step,input_size])
     Y=tf.placeholder(tf.float32, shape=[None,time_step,output_size])
     batch_index,train_x,train_y=get_train_data(batch_size,time_step,train_begin,train_end)
